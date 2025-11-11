@@ -23,10 +23,10 @@ function useCountdown(targetDate) {
 }
 
 function App() {
-  // Launch date in ~30 days by default
+  // Launch date in ~999 days by default
   const launchDate = useMemo(() => {
     const d = new Date()
-    d.setDate(d.getDate() + 30)
+    d.setDate(d.getDate() + 999)
     return d
   }, [])
 
